@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Presentation", "0 - Presentation", "{202AE209-4090-44A6-93F2-7CC463E44A3F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Service", "1 - Service", "{716A21B1-6B5D-462A-B8C2-69678D09CB03}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", "{4A7641FE-4413-4B80-831E-102095A85B4D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infrastructure", "3 - Infrastructure", "{CB1B3742-2765-43CC-85D9-9B17B821CF8A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.1 - Data", "3.1 - Data", "{0C62E430-C9D4-485B-A36E-F1F248286675}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.2 - CrossCutting", "3.2 - CrossCutting", "{807384DF-DABC-49E7-BE80-5BB64E892DCC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TKMaster.AulaEnsino.Core.Domain", "src\TKMaster.AulaEnsino.Core.Domain\TKMaster.AulaEnsino.Core.Domain.csproj", "{8F76BB4E-C781-468A-8828-25FE8AAE8615}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TKMaster.AulaEnsino.Core.Data", "src\TKMaster.AulaEnsino.Core.Data\TKMaster.AulaEnsino.Core.Data.csproj", "{30295367-A067-4A3A-B266-F9005916241E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TKMaster.AulaEnsino.Core.WebApi", "src\TKMaster.AulaEnsino.Core.WebApi\TKMaster.AulaEnsino.Core.WebApi.csproj", "{273AC77B-E620-4068-8131-3B56DDF5E3AA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TKMaster.AulaEnsino.Core.IoC", "src\TKMaster.AulaEnsino.Core.IoC\TKMaster.AulaEnsino.Core.IoC.csproj", "{A9E7DF0F-E3FD-4A17-A948-89D8BB383FB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TKMaster.AulaEnsino.Core.Service", "src\TKMaster.AulaEnsino.Core.Service\TKMaster.AulaEnsino.Core.Service.csproj", "{8C69DF22-D6AB-4E11-9F2F-E8D0D1B76B87}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F76BB4E-C781-468A-8828-25FE8AAE8615}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F76BB4E-C781-468A-8828-25FE8AAE8615}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F76BB4E-C781-468A-8828-25FE8AAE8615}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F76BB4E-C781-468A-8828-25FE8AAE8615}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30295367-A067-4A3A-B266-F9005916241E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30295367-A067-4A3A-B266-F9005916241E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30295367-A067-4A3A-B266-F9005916241E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30295367-A067-4A3A-B266-F9005916241E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{273AC77B-E620-4068-8131-3B56DDF5E3AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{273AC77B-E620-4068-8131-3B56DDF5E3AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{273AC77B-E620-4068-8131-3B56DDF5E3AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{273AC77B-E620-4068-8131-3B56DDF5E3AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9E7DF0F-E3FD-4A17-A948-89D8BB383FB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9E7DF0F-E3FD-4A17-A948-89D8BB383FB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9E7DF0F-E3FD-4A17-A948-89D8BB383FB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9E7DF0F-E3FD-4A17-A948-89D8BB383FB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C69DF22-D6AB-4E11-9F2F-E8D0D1B76B87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C69DF22-D6AB-4E11-9F2F-E8D0D1B76B87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C69DF22-D6AB-4E11-9F2F-E8D0D1B76B87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C69DF22-D6AB-4E11-9F2F-E8D0D1B76B87}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0C62E430-C9D4-485B-A36E-F1F248286675} = {CB1B3742-2765-43CC-85D9-9B17B821CF8A}
+		{807384DF-DABC-49E7-BE80-5BB64E892DCC} = {CB1B3742-2765-43CC-85D9-9B17B821CF8A}
+		{8F76BB4E-C781-468A-8828-25FE8AAE8615} = {4A7641FE-4413-4B80-831E-102095A85B4D}
+		{30295367-A067-4A3A-B266-F9005916241E} = {0C62E430-C9D4-485B-A36E-F1F248286675}
+		{273AC77B-E620-4068-8131-3B56DDF5E3AA} = {202AE209-4090-44A6-93F2-7CC463E44A3F}
+		{A9E7DF0F-E3FD-4A17-A948-89D8BB383FB7} = {807384DF-DABC-49E7-BE80-5BB64E892DCC}
+		{8C69DF22-D6AB-4E11-9F2F-E8D0D1B76B87} = {716A21B1-6B5D-462A-B8C2-69678D09CB03}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F97DCD55-9EDA-4C62-93A2-A47AF946F29F}
+	EndGlobalSection
+EndGlobal
