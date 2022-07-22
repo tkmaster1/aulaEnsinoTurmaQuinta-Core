@@ -20,6 +20,7 @@ namespace TKMaster.AulaEnsino.Core.Data.EntityConfig
             builder
                 .Property(c => c.Nome)
                 .IsRequired()
+                .HasMaxLength(255)
                 .HasColumnName("nome");
 
             builder
