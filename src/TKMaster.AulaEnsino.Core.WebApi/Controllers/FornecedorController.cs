@@ -47,6 +47,21 @@ namespace TKMaster.AulaEnsino.Core.WebApi.Controllers
             return Response(retorno.Select(x => x.ToResponse()));
         }
 
+        [HttpPost("BuscarFornecedores")]
+        [Consumes("application/Json")]
+        [Produces("application/Json")]
+        [ProducesResponseType(typeof(ResponseEntidadeBase), 200)]
+        [ProducesResponseType(typeof(ResponseFalha), 400)]
+        [ProducesResponseType(typeof(ResponseFalha), 403)]
+        [ProducesResponseType(typeof(ResponseFalha), 409)]
+        [ProducesResponseType(typeof(ResponseFalha), 500)]
+        [ProducesResponseType(typeof(ResponseFalha), 502)]
+        public async Task<IActionResult> BuscarFornecedores([FromBody] RequestBuscarFornecedor request)
+        {
+            var retorno = await _fornecedorApp.BuscarFornecedores(request.ToRequest());
+            return Response(retorno.Select(x => x.ToResponse()));
+        }
+
         [HttpGet("ObterPorCodigo/{codigo}")]
         [Consumes("application/Json")]
         [Produces("application/Json")]

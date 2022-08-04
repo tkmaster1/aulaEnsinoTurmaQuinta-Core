@@ -6,17 +6,7 @@ namespace TKMaster.AulaEnsino.Core.WebApi.Mapper
 {
     public static class FornecedorEntityToViewModel
     {
-        public static FornecedorDTO ToResponse(this Fornecedor entity)
-        {
-            return new FornecedorDTO()
-            {
-                Codigo = entity.Codigo,
-                Nome = entity.Nome,
-                Status = entity.Status,
-                Documento = entity.Documento,
-                TipoPessoa = entity.TipoPessoa.Trim().ToUpper()
-            };
-        }
+        #region "ToRequest"
 
         public static Fornecedor ToRequest(this RequestFornecedor request)
         {
@@ -33,6 +23,21 @@ namespace TKMaster.AulaEnsino.Core.WebApi.Mapper
             return retorno;
         }
 
+        public static Fornecedor ToRequest(this RequestBuscarFornecedor request)
+        {
+            var retorno = new Fornecedor();
+
+            if (request != null)
+            {
+                retorno.Nome = request.Nome != null ? request.Nome.Trim().ToUpper() : string.Empty;
+                retorno.StatusPesquisa = request.StatusPesquisa;
+                retorno.Documento = request.Documento != null ? request.Documento.Trim() : string.Empty;
+                retorno.TipoPessoa = request.TipoPessoa != null ? request.TipoPessoa.Trim().ToUpper() : string.Empty;
+            }
+
+            return retorno;
+        }
+
         public static Fornecedor ToRequest(this RequestReativarExcluirFornecedor request)
         {
             return new Fornecedor()
@@ -40,5 +45,23 @@ namespace TKMaster.AulaEnsino.Core.WebApi.Mapper
                 Codigo = request.Codigo
             };
         }
+
+        #endregion
+
+        #region "ToResponse"
+
+        public static FornecedorDTO ToResponse(this Fornecedor entity)
+        {
+            return new FornecedorDTO()
+            {
+                Codigo = entity.Codigo,
+                Nome = entity.Nome,
+                Status = entity.Status,
+                Documento = entity.Documento,
+                TipoPessoa = entity.TipoPessoa.Trim().ToUpper()
+            };
+        }
+
+        #endregion
     }
 }

@@ -11,6 +11,8 @@ namespace TKMaster.AulaEnsino.Core.Domain.Interfaces.Services
 
         Task<IEnumerable<Fornecedor>> ListarTodos();
 
+        Task<ICollection<Fornecedor>> BuscarFornecedores(Fornecedor fornecedor);
+
         Task<Fornecedor> ObterPorCodigo(int codigo);
 
         Task<int> Adicionar(Fornecedor entity);

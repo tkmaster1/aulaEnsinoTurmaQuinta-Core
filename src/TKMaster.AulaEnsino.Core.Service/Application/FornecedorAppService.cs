@@ -26,6 +26,21 @@ namespace TKMaster.AulaEnsino.Core.Service.Application
 
         #region Methods
 
+        public async Task<IEnumerable<Fornecedor>> ListarTodos()
+        {
+            return await _fornecedorRepository.ListarTodos();
+        }
+
+        public async Task<IEnumerable<Fornecedor>> ListarTodosAtivo()
+        {
+            return await _fornecedorRepository.ListarTodosAtivo();
+        }
+
+        public async Task<ICollection<Fornecedor>> BuscarFornecedores(Fornecedor fornecedor)
+        {
+            return await _fornecedorRepository.BuscarFornecedores(fornecedor);
+        }
+
         public async Task<int> Adicionar(Fornecedor entity)
         {
             _fornecedorRepository.Adicionar(entity);
@@ -94,17 +109,7 @@ namespace TKMaster.AulaEnsino.Core.Service.Application
             }
 
             return await _fornecedorRepository.Salvar() > 0;
-        }
-
-        public async Task<IEnumerable<Fornecedor>> ListarTodos()
-        {
-            return await _fornecedorRepository.ListarTodos();
-        }
-
-        public async Task<IEnumerable<Fornecedor>> ListarTodosAtivo()
-        {
-            return await _fornecedorRepository.ListarTodosAtivo();
-        }
+        }       
 
         public void Dispose()
         {

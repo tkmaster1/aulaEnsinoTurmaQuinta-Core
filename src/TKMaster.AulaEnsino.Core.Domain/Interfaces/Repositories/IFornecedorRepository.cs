@@ -8,6 +8,8 @@ namespace TKMaster.AulaEnsino.Core.Domain.Interfaces.Repositories
     {
         Task<IEnumerable<Fornecedor>> ListarTodosAtivo();
 
+        Task<ICollection<Fornecedor>> BuscarFornecedores(Fornecedor fornecedor);
+
         Task<Fornecedor> NomeExiste(string nome);
 
         Task<Fornecedor> DocumentoExiste(string documento);
